@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Fakt-Normal";
+    src: url("Fakt-Normal.eot");
+    src: url("Fakt-Normal.eot?#iefix") format("embedded-opentype"),
+         url("Fakt-Normal.woff2") format("woff2"),
+         url("Fakt-Normal.woff") format("woff"),
+         url("Fakt-Normal.ttf") format("ttf"),
+         url("Fakt-Normal.svg#Fakt-Normal") format("svg");
+    font-style: normal;
+    font-weight: normal;
+}

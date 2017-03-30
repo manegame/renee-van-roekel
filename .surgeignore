@@ -1,0 +1,9 @@
+highres/
+
+.DS_Store
+
+src/
+nod_modules/
+*.sh
+*.md
+lower

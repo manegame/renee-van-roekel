@@ -1,3 +1,7 @@
 highres/
 
 .DS_Store
+
+src/img
+src/fonts
+nod_modules/
