@@ -2,8 +2,6 @@
 
 http://reneevanroekel.org/
 
-[http://sarahsze.com/](http://sarahsze.com/)
-
 - Chaos > order
 - Zoom > small voor de achtergrond!
 
