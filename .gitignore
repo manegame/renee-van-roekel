@@ -3,9 +3,6 @@
 src/img
 src/fonts
 node_modules/
-design/
-highres/
 
 .sass-cache
 style.css.map
-
