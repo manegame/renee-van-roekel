@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "BookmanOldStyle";
+    src: url("Bookman-Oldstyle.eot");
+    src: url("Bookman-Oldstyle.eot?#iefix") format("embedded-opentype"),
+         url("Bookman-Oldstyle.woff2") format("woff2"),
+         url("Bookman-Oldstyle.woff") format("woff"),
+         url("Bookman-Oldstyle.ttf") format("ttf"),
+         url("Bookman-Oldstyle.svg#BookmanOldStyle") format("svg");
+    font-style: normal;
+    font-weight: 300;
+}

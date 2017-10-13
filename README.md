@@ -2,6 +2,7 @@
 
 http://reneevanroekel.org/
 
+[https://www.graffiti.org](https://www.graffiti.org)
 [http://sarahsze.com/](http://sarahsze.com/)
 
 - Chaos > order
@@ -11,6 +12,9 @@ http://reneevanroekel.org/
 
 - Lettertype elegant modern klassiek subtiel
 
+- SVG morphing for buttons
+https://css-tricks.com/svg-shape-morphing-works/
+http://snapsvg.io/start/ nice animatie
 
 ZOOMING
 
