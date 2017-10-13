@@ -2,12 +2,8 @@
 
 http://reneevanroekel.org/
 
-<<<<<<< HEAD
-[https://www.graffiti.org](https://www.graffiti.org)
-[http://sarahsze.com/](http://sarahsze.com/)
+http://graffiti.org/
 
-=======
->>>>>>> 48e88296e8569bca9075d5bda619e039fe727b68
 - Chaos > order
 - Zoom > small voor de achtergrond!
 
