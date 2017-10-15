@@ -3,6 +3,9 @@
 $main		: #3b1700;
 $fs			: 36px;
 $lh			: 42px;
+$fs-s		: 20px;
+$lh-s		: 24px;
+$margin : 20px;
 
 // CORE
 
@@ -21,6 +24,8 @@ body {
 // TYPE
 p {
 	margin: 0;
+	font-size: $fs-s;
+	line-height: $lh-s;
 	&.indent {
 		padding-left: 30px;
 	}
@@ -45,39 +50,72 @@ h1 {
 	line-height: $lh;
 	display: inline-block;
 	&.title {
-		width: 60vw;
+		width: 62vw;
 	}
+	&#info {
+		&:after {
+			content: 'info'
+		}
+
+	}
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
 }
 
 // LAYOUT
 
 #container {
 	#images {
-		width: 110vw;
-		// margin-top: 3vh;
 		height: calc(100vh - #{$lh * 1.5});
+		width: 100vw;
 		overflow: hidden;
-		white-space: nowrap;
 		display: flex;
 		align-items: flex-end;
 		.img {
-			margin-left: 20px;
-			display: none;
-			height: 90vh;
+			height: 100%;
+			max-height: calc(100vh - #{$lh * 1.5} - #{$margin});
+			max-width: calc(92vw - #{$margin});
 			width: auto;
+			display: none;
 			&.show {
-				display: inline-flex;
-				vertical-align: bottom;
-				max-width: 40vw;
-				img {
-					white-space: nowrap;
-					width: auto;
+				display: inline-block;
+				position: relative;
+				margin-left: $margin;
+				&:before {
+					content: ' ';
+					display: inline-block;
+					vertical-align: bottom;
 					height: 100%;
 				}
-			}
-			&:not(.not) {
-				position: absolute;
-				left: 60vw;
+				img {
+					height: auto;
+					max-height: 100%;
+					max-width: 100%;
+					display: inline-block;
+					vertical-align: bottom;
+				}
+				&:not(.not) {
+					position: absolute;
+					left: 92vw;
+					width: auto;
+					max-width: 100vw;
+					display: inline-block;
+					img {
+						height: 100%;
+						width: auto;
+						vertical-align: center;
+						max-height: none;
+						max-width: none;
+					}
+				}
 			}
 			&.border {
 				&:hover {
@@ -90,11 +128,12 @@ h1 {
 			position: absolute;
 			width: 40vw;
 			height: 100vh;
+			top: 0;
 			left: calc(60vw + 17px);
 			display: none;
 			background: white;
 			&.show {
-				padding: 2vh;
+				padding: $margin;
 				display: inline-block;
 				// transition: .5s all ease-in;
 			}
@@ -103,7 +142,7 @@ h1 {
 }
 footer {
 	position: fixed;
-	padding-left: 20px;
+	padding-left: $margin;
 	bottom: 0;
 	height: $lh * 1.5;
 	width: 100vw;
