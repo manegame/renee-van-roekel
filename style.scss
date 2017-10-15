@@ -1,6 +1,8 @@
 // THEME
 
-$main: 		#3b1700;
+$main		: #3b1700;
+$fs			: 36px;
+$lh			: 42px;
 
 // CORE
 
@@ -38,10 +40,9 @@ a {
 }
 h1 {
 	margin: 0;
-	margin-left: -2px;
 	font-weight: 500;
-	font-size: 24px;
-	line-height: 7vh;
+	font-size: $fs;
+	line-height: $lh;
 	display: inline-block;
 	&.title {
 		width: 60vw;
@@ -54,30 +55,35 @@ h1 {
 	#images {
 		width: 110vw;
 		// margin-top: 3vh;
-		height: 95vh;
+		height: calc(100vh - #{$lh * 1.5});
 		overflow: hidden;
 		white-space: nowrap;
 		display: flex;
+		align-items: flex-end;
 		.img {
 			margin-left: 20px;
 			display: none;
 			height: 90vh;
 			width: auto;
-			align-self: flex-end;
 			&.show {
 				display: inline-flex;
 				vertical-align: bottom;
+				max-width: 40vw;
+				img {
+					white-space: nowrap;
+					width: auto;
+					height: 100%;
+				}
+			}
+			&:not(.not) {
+				position: absolute;
+				left: 60vw;
 			}
 			&.border {
 				&:hover {
 					transition: all .5s ease;
 					cursor: url('img/acursor@2x.png') 30 16, pointer;
 				}
-			}
-			img {
-				white-space: nowrap;
-				width: auto;
-				height: 100%;
 			}
 		}
 		.info {
@@ -99,7 +105,12 @@ footer {
 	position: fixed;
 	padding-left: 20px;
 	bottom: 0;
-	height: 7vh;
+	height: $lh * 1.5;
 	width: 100vw;
 	background: white;
+	display: flex;
+	align-items: flex-end;
+	h1 {
+		padding-bottom: 10px;
+	}
 }

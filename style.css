@@ -26,36 +26,39 @@ a {
 
 h1 {
   margin: 0;
-  margin-left: -2px;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 7vh;
+  font-size: 36px;
+  line-height: 42px;
   display: inline-block; }
   h1.title {
     width: 60vw; }
 
 #container #images {
   width: 110vw;
-  height: 95vh;
+  height: calc(100vh - 63px);
   overflow: hidden;
   white-space: nowrap;
-  display: flex; }
+  display: flex;
+  align-items: flex-end; }
   #container #images .img {
     margin-left: 20px;
     display: none;
     height: 90vh;
-    width: auto;
-    align-self: flex-end; }
+    width: auto; }
     #container #images .img.show {
       display: inline-flex;
-      vertical-align: bottom; }
+      vertical-align: bottom;
+      max-width: 40vw; }
+      #container #images .img.show img {
+        white-space: nowrap;
+        width: auto;
+        height: 100%; }
+    #container #images .img:not(.not) {
+      position: absolute;
+      left: 60vw; }
     #container #images .img.border:hover {
       transition: all .5s ease;
       cursor: url("img/acursor@2x.png") 30 16, pointer; }
-    #container #images .img img {
-      white-space: nowrap;
-      width: auto;
-      height: 100%; }
   #container #images .info {
     position: absolute;
     width: 40vw;
@@ -71,8 +74,12 @@ footer {
   position: fixed;
   padding-left: 20px;
   bottom: 0;
-  height: 7vh;
+  height: 63px;
   width: 100vw;
-  background: white; }
+  background: white;
+  display: flex;
+  align-items: flex-end; }
+  footer h1 {
+    padding-bottom: 10px; }
 
 /*# sourceMappingURL=style.css.map */
