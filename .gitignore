@@ -4,5 +4,8 @@ src/img
 src/fonts
 node_modules/
 
+design/hihghres/
+design/application/
+
 .sass-cache
 style.css.map
